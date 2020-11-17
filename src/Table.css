@@ -13,6 +13,7 @@
 .table tr {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .table td {
