@@ -1,9 +1,9 @@
 import React from "react";
-import { Map as LeafletMap, TileLayer } from "react-leaflet";
-import "./Map.css";
+import {  Map as LeafletMap , TileLayer } from "react-leaflet";
+import "./MapView.css";
 import { showDataOnMap } from "./util";
 
-function Map({ countries, casesType, center, zoom }) {
+function MapView({ countries, casesType, center, zoom }) {
 	return (
 		<div className="map">
 			<LeafletMap casesType={casesType} center={center} zoom={zoom} countries={countries}>
@@ -17,4 +17,4 @@ function Map({ countries, casesType, center, zoom }) {
 	);
 }
 
-export default Map;
+export default MapView;
